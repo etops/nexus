@@ -1,6 +1,6 @@
 {
   "name": "@etops/nexus",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Scalable, strongly typed GraphQL schema development",
   "keywords": [
     "graphql",
