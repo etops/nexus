@@ -1,5 +1,5 @@
 {
-  "name": "nexus",
+  "name": "@etops/nexus",
   "version": "1.4.0",
   "description": "Scalable, strongly typed GraphQL schema development",
   "keywords": [
