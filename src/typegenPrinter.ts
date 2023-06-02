@@ -280,8 +280,10 @@ export class TypegenPrinter {
           )
         }
       })
+      // add logic to be @etops/nexus
       eachObj(importMap, (val, key) => {
-        imports.push(`import type { ${Array.from(val).join(', ')} } from ${JSON.stringify(key)}`)
+        const fromToUse = JSON.stringify(key) === 'nexus' ? '@etops/nexus' : JSON.stringify(key);
+        imports.push(`import type { ${Array.from(val).join(', ')} } from ${fromToUse}`)
       })
     }
 
